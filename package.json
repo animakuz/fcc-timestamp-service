@@ -1,0 +1,29 @@
+{
+  "name": "fcc-timestamp-service",
+  "version": "1.0.0",
+  "description": "Simple timestamp server for FreeCodeCamp basejump exercise",
+  "main": "server.js",
+  "scripts": {
+    "info": "echo 'Simple timestamp server for FreeCodeCamp basejump exercise'",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animakuz/fcc-timestamp-service.git"
+  },
+  "keywords": [
+    "timestamp",
+    "server",
+    "node",
+    "freecodecamp"
+  ],
+  "author": "animakuz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/animakuz/fcc-timestamp-service/issues"
+  },
+  "homepage": "https://github.com/animakuz/fcc-timestamp-service#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

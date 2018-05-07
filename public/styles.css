@@ -1,0 +1,55 @@
+body {
+  background-color: #f4f4f4;
+} 
+ 
+
+.container {
+  max-width: 800px;
+} 
+
+header {
+  text-align: center;
+} 
+
+.instructions {
+  color: #55f;
+}
+
+.examples {
+  border-left: 10px solid #999;
+} 
+
+.results {
+  color: green;
+}
+
+.input {
+  border: 2px solid green;
+  padding: 10px 20px;
+}
+
+.input input[type=text] {
+  font-size: 12px;
+  padding: 7px 5px;
+} 
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #5f5;
+  text-decoration: none;
+  color: #333;
+} 
+
+.btn:hover, .btn:active {
+  background-color: #0a0;
+  color: #efe;
+}
+
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+} 
+

@@ -1,12 +1,29 @@
-var http = require('http');
+var express = require('express');
 var port = 8080;
-var host = '127.0.0.1';
+var app = express();
 
-var server = http.createServer(function(req, res){
-    res.writeHead(200, { 'Content-Type' : 'text/html'});
-    res.end('place timestamp here');
+app.use(express.static('public'));
+
+app.get('/', function(req, res) {
+  //send home page
+  res.sendFile(__dirname + '/home.html');
 });
 
-server.listen(port, host);
 
-console.log('Server listening on port ' + port); 
+app.get('/:text', function(req, res) {
+  //send response json
+  //test 
+  var result = {
+    "input"   : req.params.text, 
+    "unix"    : "0",
+    "natural" : "January 1, 1970"
+  };
+  res.json(result);
+});
+
+
+//create server
+var server = app.listen(port, function(req, res) {
+  console.log('Listening on port ' + port);
+});
+
