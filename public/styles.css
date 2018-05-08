@@ -4,7 +4,8 @@ body {
  
 
 .container {
-  max-width: 800px;
+  max-width: 1024px;
+  margin: 0 auto;
 } 
 
 header {
@@ -12,18 +13,29 @@ header {
 } 
 
 .instructions {
-  color: #55f;
+  color: #050;
+  text-align: center;
 }
 
 .examples {
-  border-left: 10px solid #999;
+  margin: 40px 0;
+  text-align: center;
 } 
 
-.results {
-  color: green;
+.examples div  {
+  margin: 40px 0;
 }
 
-.input {
+.examples .result {
+  color: #a11;
+}
+
+.input { 
+  text-align: center;
+} 
+
+.input label {
+  display: inline-block;
   border: 2px solid green;
   padding: 10px 20px;
 }
@@ -35,16 +47,16 @@ header {
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   padding: 5px 10px;
-  background-color: #5f5;
+  background-color: #1c1;
   text-decoration: none;
-  color: #333;
+  color: #131;
 } 
 
 .btn:hover, .btn:active {
-  background-color: #0a0;
-  color: #efe;
+  background-color: #050;
+  color: #fff;
 }
 
 
